@@ -16,8 +16,8 @@ frontend nicole-frontend
         default_backend nicole-backend
 backend nicole-backend
         balance roundrobin
-        server 6238-web-01 54.196.216.8:80 check
-        server 6238-web-02 98.80.15.59:80 check
+        server 6238-web-01 3.95.20.211:80 check
+        server 6238-web-02 34.207.208.0:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
